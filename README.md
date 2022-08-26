@@ -33,7 +33,7 @@ In the end, remember that the main goal is to compile into machine (native) code
 ## Difference between JIT and AOT compilations
 
 JIT compilers are like the Java VM, the Python interpreter or the C# CIL compiler.
-JIT compilers generate an executable file which contains bytecode. On execution, the bytecode is converted by the installed VM (Java VM or .NET Framework for example) into machine code.
+JIT compilers generate an executable file which contains bytecode. On execution, the bytecode is converted by the installed VM (Java VM or .NET runtime for example) into machine code.
 
 On the other hand, AOT compilers would generate the machine code in a direct way and you'll be able to execute it without the need for any JIT bytecode interpreters.
 
@@ -74,10 +74,10 @@ So what does Clang do? Clang takes your C/C++ source code, converts it into LLVM
 See https://stackoverflow.com/a/3509258/8524395, https://stackoverflow.com/questions/9148890/how-to-make-clang-compile-to-llvm-ir and https://stackoverflow.com/a/3744093/8524395 for examples and more explanation :)
 
 ## Are programming languages like C# and Java really compiled or rather interpreted?
-This can be confusing actually. Programming languages like C# and Java depend on their JIT compilers (the installed .NET Framework/JVM runtime).
+This can be confusing actually. Programming languages like C# and Java depend on their JIT compilers (the installed .NET runtime/JVM runtime).
 
-When you compile your C# application or Java project, you don't actually get an executable containing native code, but you get an executable containing the bytecode understood by the corresponding JIT compiler (.NET framework/JVM runtime).
-Such JIT compilers then will translate the needed bytecode bits into native code once needed.
+When you compile your C# application or Java project, you don't actually get an executable containing native code, but you get an executable containing the bytecode understood by the corresponding JIT compiler (.NET runtime/JVM runtime).
+Such JIT compilers then will translate the needed bytecode bits into native code once needed (during execution).
 
 I personally disagree with calling such programming languages compiled, they probably have their own definition of "compilation" but what I'd really consider a compiled program is those that are directly understood by the computer processor.
 
