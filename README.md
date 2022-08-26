@@ -17,7 +17,14 @@ For the other programming languages, you'll either find a direct source code to 
 - For .NET (C#, VB.NET, etc) there's .NET Native (https://stackoverflow.com/a/35467422/8524395) or Mono's AOT compiler (https://www.mono-project.com/docs/advanced/aot/#full-aot)
 - For PHP there's KPHP: https://vkcom.github.io/kphp/, or https://www.peachpie.io/ which compiles PHP into .NET (check the above line to compile the generated .NET into machine code)
 
-*for more, try Googling `compile [programming language name] to machine code`,  `compile [programming language name] to native code`, `aot compile [programming language name]` (this one isn't recommended since AOT is always relatively defined. i.e. compiling Java  source code to a JAR file containing JVM bytecode is considered AOT compilation [compiled/built before execution]), `compile [programming language name] bytecode to machine code`, `compile [programming language name] to c` (this one isn't the best since there can be compilers to native code without the need to use a C compiler). In the end, remember that the main goal is to compile into machine (native) code*
+*for more, try Googling*:
+- `compile [programming language name] to machine code`
+- `compile [programming language name] to native code`
+- `aot compile [programming language name]` (this one isn't recommended since AOT is always relatively defined. i.e. compiling Java source code to a JAR file containing JVM bytecode is considered AOT compilation [compiled/built before execution])
+- `compile [programming language name] bytecode to machine code`
+- `compile [programming language name] to c` (this one isn't the best since there can be compilers to native code without the need to use a C compiler).
+
+In the end, remember that the main goal is to compile into machine (native) code*
 ---
 
 ## Difference between JIT and AOT compilations
