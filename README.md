@@ -1,5 +1,7 @@
 # Code Protection
-Guides, tips and essentials showing how to protect your source code. [+ some basic Computer Science tips &amp; definitions :)]
+> Guides, tips and essentials showing how to protect your source code. [+ some basic Computer Science tips &amp; definitions :)]
+
+---
 
 The best way to protect your source code is to convert it into machine code (also called "native code" or "native executable"). Machine code is the only programming language understood by CPUs.
 
@@ -24,7 +26,8 @@ For the other programming languages, you'll either find a direct source code to 
 - `compile [programming language name] bytecode to machine code`
 - `compile [programming language name] to c` (this one isn't the best since there can be compilers to native code without the need to use a C compiler).
 
-In the end, remember that the main goal is to compile into machine (native) code*
+In the end, remember that the main goal is to compile into machine (native) code
+
 ---
 
 ## Difference between JIT and AOT compilations
