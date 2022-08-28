@@ -137,14 +137,18 @@ enough right? :)
 ## Why does the output machine-code-compiled file contain my method names and strings?
 This is the normal behaviour of machine code executables. If you want to protect/hide such metadata from the output file, you'll have to use an obfuscator before compiling.
 
+Some compilers also have a "Debug" mode instead of the "Production Release" mode. Debug modes usually keep a lot of debug information and metadata that can help reverse engineering your application. So make sure your compilers aren't putting such debug information in its calculations.
+
 See:
 - https://softwareengineering.stackexchange.com/questions/155131/is-it-important-to-obfuscate-c-application-code#comment295359_155131
 - https://www.quora.com/Why-my-c-exe-string-variable-values-are-visible-when-I-decompiled-the-release-build-exe-with-cutter-How-do-I-make-sure-my-string-variable-values-are-not-visible-in-the-cutter-or-any-other-decompiler/answer/Thomas-Maierhofer-1?ch=15&oid=206511938&share=0175d9a1&srid=9WRvE&target_type=answer
 - https://stackoverflow.com/questions/31492934/why-are-there-text-function-names-inside-exe-file
 - https://stackoverflow.com/q/11291895/8524395
 - https://stackoverflow.com/questions/17732833/remove-classes-string-name-from-compiled-release-exe
-
-Some compilers also have a "Debug" mode instead of the "Production Release" mode. Debug modes usually keep a lot of debug information and metadata that can help reverse engineering your application. So make sure your compilers aren't putting such debug information in its calculations.
+- https://curatedgo.com/r/when-you-compile-unixpicklegobfuscate/index.html
+- https://www.reddit.com/r/golang/comments/k0ttu0/blackrota_a_heavily_obfuscated_backdoor_written/
+- https://stackoverflow.com/questions/37101223/how-to-obfuscate-string-of-variable-function-and-package-names-in-golang-binary
+- https://binary.ninja/2020/12/02/deobfuscation-of-gobfuscate-golang-binaries.html
 
 Examples of obfuscators:
 - https://github.com/burrowers/garble for Golang
