@@ -129,6 +129,7 @@ Most of the C, C++ (and machine code executables in general) reverse engineering
 - https://softwareengineering.stackexchange.com/a/155134/419528
 - https://stackoverflow.com/q/65531208/8524395
 - https://stackoverflow.com/questions/14308610/how-hard-is-it-really-to-decompile-assembly-code
+- https://reverseengineering.stackexchange.com/a/312/41794
 - https://stackoverflow.com/a/8601420/8524395
 - and most importantly: https://en.wikipedia.org/wiki/Machine_code#Readability_by_humans
 
