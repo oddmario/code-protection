@@ -18,6 +18,7 @@ For the other programming languages, you'll either find a direct source code to 
 - For Kotlin there's Kotlin Native: https://kotlinlang.org/docs/native-overview.html
 - For .NET (C#, VB.NET, etc) there's .NET Native (https://stackoverflow.com/a/35467422/8524395) or Mono's AOT compiler (https://www.mono-project.com/docs/advanced/aot/#full-aot)
 - For PHP there's KPHP: https://vkcom.github.io/kphp/, or https://www.peachpie.io/ which compiles PHP into .NET (check the above line to compile the generated .NET into machine code)
+- Golang (Go) is already a compiled programming language that naturally compiles to native code and you won't need to take any additional steps there :)
 
 *for more, try Googling*:
 - `compile [programming language name] to machine code`
@@ -132,6 +133,23 @@ Most of the C, C++ (and machine code executables in general) reverse engineering
 - and most importantly: https://en.wikipedia.org/wiki/Machine_code#Readability_by_humans
 
 enough right? :)
+
+## Why does the output machine-code-compiled file contain my method names and strings?
+This is the normal behaviour of machine code executables. If you want to protect/hide such metadata from the output file, you'll have to use an obfuscator before compiling.
+
+See:
+- https://softwareengineering.stackexchange.com/questions/155131/is-it-important-to-obfuscate-c-application-code#comment295359_155131
+- https://www.quora.com/Why-my-c-exe-string-variable-values-are-visible-when-I-decompiled-the-release-build-exe-with-cutter-How-do-I-make-sure-my-string-variable-values-are-not-visible-in-the-cutter-or-any-other-decompiler/answer/Thomas-Maierhofer-1?ch=15&oid=206511938&share=0175d9a1&srid=9WRvE&target_type=answer
+- https://stackoverflow.com/questions/31492934/why-are-there-text-function-names-inside-exe-file
+- https://stackoverflow.com/q/11291895/8524395
+- https://stackoverflow.com/questions/17732833/remove-classes-string-name-from-compiled-release-exe
+
+Some compilers also have a "Debug" mode instead of the "Production Release" mode. Debug modes usually keep a lot of debug information and metadata that can help reverse engineering your application. So make sure your compilers aren't putting such debug information in its calculations.
+
+Examples of obfuscators:
+- https://github.com/burrowers/garble for Golang
+- https://gist.github.com/oddmario/f8f313b01634c906f579c3df132767e2 for Python
+- Use Google for more :)
 
 ## Finally,
 More resources explaining the steps of computer program execution, compilations, and more definitions for machine code can be found here:
