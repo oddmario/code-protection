@@ -33,8 +33,8 @@ In the end, remember that the main goal is to compile into machine (native) code
 
 ## Difference between JIT and AOT compilations
 
-JIT compilers are like the Java VM, the Python interpreter or the C# CIL compiler.
-JIT compilers generate an executable file which contains bytecode. On execution, the bytecode is converted by the installed VM (Java VM or .NET runtime for example) into machine code.
+JIT compilers are like the Java VM or the .NET (C#/VB.NET/F#) CIL compiler.
+JIT compilers generate an executable file which contains bytecode. On execution, the bytecode is converted by the installed VM (Java VM or .NET runtime for example) into machine code. Most of the JIT-compiled programming languages (as well as the interpreted languages) will require you to install an additional software (the JIT compiler/interpreter) in order to run the programs programmed in them, examples of such software are the Python interpreter, JVM runtime, .NET core/.NET framework, etc.
 
 On the other hand, AOT compilers would generate the machine code in a direct way and you'll be able to execute it without the need for any JIT bytecode interpreters.
 
