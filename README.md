@@ -181,3 +181,5 @@ More resources explaining the steps of computer program execution, compilations,
 - https://en.wikipedia.org/wiki/Executable
 - https://en.wikipedia.org/wiki/Portable_Executable
 - https://stackoverflow.com/questions/466790/assembly-code-vs-machine-code-vs-object-code
+- https://medium.com/@bdov_/what-happens-when-you-type-gcc-main-c-a4454564e96d
+- https://www.scaler.com/topics/c/compilation-process-in-c/
